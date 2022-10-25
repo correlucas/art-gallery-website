@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
+  box-sizing: border-box;
+  transition: all ease 0.2s;
+  list-style-type: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  line-height: 0;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* remove all button styles */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+body {
+  line-height: 1.3;
+  text-rendering: optimizeSpeed;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: ghostwhite;
+}
+
+/* colors  */
+:root {
+  /* primary */
+  --dark-blue: hsla(234, 53%, 16%, 1);
+
+  /* neutral */
+  --gray: hsla(233, 10%, 56%, 1);
+
+}
