@@ -67,6 +67,8 @@ body {
   --white: hsla(0, 0%, 100%, 1);
 }
 
+/* heading */
+
 .heading-xl {
   font: 900 96px/88px 'Big Shoulders Display', sans-serif;
   line-height: 92%;
@@ -105,4 +107,17 @@ body {
   font: 300 18px/28px 'Outfit', sans-serif;
   line-height: 156%;
   color: var(--gray);
+}
+
+/* css */
+
+
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+footer {
+  background-color: black;
 }
