@@ -128,8 +128,15 @@ body {
 
 .btn-arrow {
   display: flex;
-  z-index: 3;
+  z-index: 1;
+}
+
+.btn-arrow-location {
+  display: flex;
+  z-index: 2;
   position: absolute;
+  top: 0;
+  justify-content: flex-start;
 }
 
 .arrow-right {
@@ -147,6 +154,8 @@ body {
 
 #map {
   height: 600px;
+  z-index: 1;
+  filter: grayscale(100);
 }
 
 header {
