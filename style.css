@@ -128,6 +128,8 @@ body {
 
 .btn-arrow {
   display: flex;
+  z-index: 3;
+  position: absolute;
 }
 
 .arrow-right {
@@ -144,7 +146,6 @@ body {
 /* leaflet */
 
 #map {
-  z-index: 1;
   height: 600px;
 }
 
@@ -270,8 +271,7 @@ footer {
 .adress {
   display: flex;
   gap: 40px;
-  margin-top: 500px;
-  padding-bottom: 90px;
+  padding-block: 90px;
   justify-content: space-between;
 }
 
