@@ -106,6 +106,7 @@ body {
 .body-xs {
   font: 200 16px/24px 'Outfit', sans-serif;
   color: var(--white);
+  max-width: 430px;
 }
 
 .white {
@@ -205,7 +206,7 @@ header {
 .grid {
   display: grid;
   gap: 30px;
-  margin-bottom: 50px;
+  margin-block: 180px;
   max-width: 100%;
   grid-template-columns: 1fr 160px 1fr;
   grid-template-rows: auto auto 1fr;
@@ -214,6 +215,16 @@ header {
     'l1 l1 r1'
     'l1 l1 r2'
   ;
+}
+
+footer {
+  padding-block: 80px;
+}
+
+.flex {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
 }
 
 .social {
