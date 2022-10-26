@@ -104,13 +104,17 @@ body {
 }
 
 .body-xs {
-  font: 200 16px/24px 'Outfit', sans-serif;
+  font: 200 18px/24px 'Outfit', sans-serif;
   color: var(--white);
-  max-width: 430px;
+  max-width: 370px;
 }
 
 .white {
   color: var(--white);
+}
+
+.brown {
+  color: var(--brown);
 }
 
 .btn {
@@ -127,14 +131,25 @@ body {
 }
 
 .arrow-right {
-  padding: 24px 20px;
+  padding: 16px;
   background-color: var(--brown);
+}
+
+.arrow-right img {
+  padding: 10px;
 }
 
 /* css */
 
+/* leaflet */
+
+#map {
+  z-index: 1;
+  height: 600px;
+}
+
 header {
-  background: linear-gradient(270deg, #FFFFFF 50%, #000000 50%);
+  background: linear-gradient(270deg, #FFFFFF 50%, hsla(0, 0%, 8%, 1) 50%);
 }
 
 .container {
@@ -145,7 +160,7 @@ header {
 
 .hero-section {
   display: flex;
-  padding-block: 190px 314px;
+  padding-block: 190px 300px;
   margin-bottom: 180px;
   background-repeat: no-repeat;
   background-image: url(./assets/desktop/image-hero.jpg);
@@ -169,7 +184,7 @@ header {
 .top-feature-left {
   display: flex;
   flex-direction: column;
-  padding: 62px 50px;
+  padding: 50px;
   gap: 32px;
   background: linear-gradient(125.02deg, #FCFCFC -1.38%, #ECECEC 100%);
   grid-area: t1;
@@ -199,8 +214,8 @@ header {
   gap: 32px;
   grid-area: r2;
   max-width: 100%;
-  padding: 62px 50px;
-  background: linear-gradient(305.67deg, #000000 0%, #1a1a1a 100%);
+  padding: 50px;
+  background: linear-gradient(305.67deg, rgb(51, 51, 51)0%, rgb(40, 40, 40) 100%);
 }
 
 .grid {
@@ -234,7 +249,41 @@ footer {
 }
 
 footer {
-  background-color: black;
+  background-color: var(--black)
+}
+
+.location {
+  background-color: var(--brown);
+}
+
+.bg {
+  background-color: var(--black);
+}
+
+.adress p {
+  color: white;
+  max-width: 540px;
+  font: 200 18px/24px 'Outfit', sans-serif;
+  color: var(--white);
+}
+
+.adress {
+  display: flex;
+  gap: 40px;
+  margin-top: 500px;
+  padding-bottom: 90px;
+  justify-content: space-between;
+}
+
+.adress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  width: 150px;
 }
 
 /* paddings and margins */

@@ -1,32 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Art gallery website</title>
+  <title> Front End Project | correlucas</title>
+
+  <link rel="icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
 </head>
+
 <body>
+  <main class="bg">
+    <section class="container">
+      <div class="btn-arrow">
+        <a class="btn" href="./index.html">Back to Home</a>
+        <div class="arrow-right">
+          <a href="./index.html"><img src="./assets/icon-arrow-right.svg" alt="Arrow Button"></a>
+        </div>
+      </div>
 
-  Back to Home
+      <div id="map"></div>
 
-  Our location
+      <div class="adress location-block">
+        <h1 class="heading-l white">Our location</h1>
+        <div class="adress-list">
+          <h2 class="heading-s brown">99 King Street</h2>
+          <div>
+            <p>Newport</p>
+            <p> RI 02840</p>
+            <p> United States of America
+          </div>
+          <p>Our newly opened gallery is located near the Edward King House on 99 King
+            Street, the Modern Art Gallery is free to all visitors and open seven days
+            a week from 8am to 9pm.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  99 King Street
-  Newport
-  RI 02840
-  United States of America
-
-  Our newly opened gallery is located near the Edward King House on 99 King 
-  Street, the Modern Art Gallery is free to all visitors and open seven days 
-  a week from 8am to 9pm.
-
-  Modern Art Gallery
-
-  The Modern Art Gallery is free to all visitors and open seven days a week 
-  from 8am to 9pm. Find us at 99 King Street, Newport, USA.
-
+  <footer class="location">
+    <div class="container flex">
+      <img class="logo" src="./assets/logo-light.svg" alt="Art Gallery Logo">
+      <p class="body-xs">The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
+      <ul class="social">
+        <li><a href="#"> <img src="./assets/icon-facebook.svg" alt="Facebook"></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/icon-instagram.svg" alt="Instagram"></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/icon-twitter.svg" alt="Twitter"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="./style.css" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
 </body>
+
 </html>
