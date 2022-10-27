@@ -259,7 +259,7 @@ header {
   flex-direction: column;
   padding: 3.125rem;
   gap: 2rem;
-  background: linear-gradient(125.02deg, #FCFCFC -1.38%, #ECECEC 100%);
+  background-color: #ececec;
   grid-area: t1;
 }
 
@@ -291,7 +291,7 @@ header {
   grid-area: r2;
   max-width: 100%;
   padding: 3.125rem;
-  background: linear-gradient(305.67deg, rgb(51, 51, 51)0%, rgb(40, 40, 40) 100%);
+  background-color: var(--black);
 }
 
 /* card hover effects */
@@ -609,6 +609,11 @@ footer {
   }
 
   .right-feature-2:hover,
+  .top-feature-left:hover {
+    filter: invert(100);
+    transition: all ease 0.5s;
+  }
+
   .top-feature-left:hover {
     filter: invert(100);
     transition: all ease 0.5s;
