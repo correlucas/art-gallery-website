@@ -118,33 +118,65 @@ body {
 }
 
 .btn {
-  padding: 24px 35px;
-  font: 600 20px/24px 'Big Shoulders Display', sans-serif;
-  letter-spacing: 3.2px;
-  background-color: var(--black);
-  color: var(--white);
-  text-transform: uppercase;
-}
-
-.btn-arrow {
   display: flex;
+  max-width: 260px;
   z-index: 1;
+  background-color: var(--black);
+  justify-content: flex-end;
 }
 
-.btn-arrow-location {
+.btn-2 {
   display: flex;
+  max-width: 260px;
+  z-index: 1;
+  background-color: var(--black);
+  justify-content: flex-end;
   z-index: 2;
   position: absolute;
   top: 0;
-  justify-content: flex-start;
+  flex-direction: row-reverse;
 }
 
-.arrow-right {
+.btn-link {
+  padding: 24px 35px;
+  font: 600 20px/24px 'Big Shoulders Display', sans-serif;
+  letter-spacing: 3.2px;
+  color: var(--white);
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+}
+
+.btn:hover,
+.btn-2:hover {
+  background-color: var(--brown);
+  transition: all ease 0.3s;
+}
+
+.arrow-right,
+.arrow-left {
   padding: 16px;
+  background-color: var(--brown);
+  transition: all ease 0.3s;
+}
+
+.arrow-right:hover,
+.arrow-left:hover {
+  background-color: var(--black);
+  transition: all ease 0.3s;
+}
+
+.btn-link:hover~.arrow-right {
+  background-color: var(--black);
+  transition: all ease 0.3s;
+}
+
+.btn-link:hover {
   background-color: var(--brown);
 }
 
-.arrow-right img {
+
+.arrow-right img,
+.arrow-left img {
   padding: 10px;
 }
 
