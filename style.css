@@ -238,6 +238,20 @@ header {
 
 /* grid */
 
+.grid {
+  display: grid;
+  gap: 30px;
+  margin-block: 180px;
+  max-width: 100%;
+  grid-template-columns: 1fr 160px 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    't1 t2 t2'
+    'l1 l1 r1'
+    'l1 l1 r2';
+  transition: all ease 0.5s;
+}
+
 .top-feature-left {
   display: flex;
   flex-direction: column;
@@ -251,18 +265,21 @@ header {
   display: flex;
   grid-area: t2;
   max-width: 100%;
+  overflow: hidden;
 }
 
 .left-feature {
   display: flex;
   grid-area: l1;
   max-width: 100%;
+  overflow: hidden;
 }
 
 .right-feature-1 {
   display: flex;
   grid-area: r1;
   max-width: 100%;
+  overflow: hidden;
 }
 
 .right-feature-2 {
@@ -275,18 +292,19 @@ header {
   background: linear-gradient(305.67deg, rgb(51, 51, 51)0%, rgb(40, 40, 40) 100%);
 }
 
-.grid {
-  display: grid;
-  gap: 30px;
-  margin-block: 180px;
-  max-width: 100%;
-  grid-template-columns: 1fr 160px 1fr;
-  grid-template-rows: auto auto 1fr;
-  grid-template-areas:
-    't1 t2 t2'
-    'l1 l1 r1'
-    'l1 l1 r2'
-  ;
+/* card hover effects */
+
+.top-feature-right img,
+.left-feature img {
+  transform: scale(1);
+  transition: all ease 1s;
+}
+
+.top-feature-right img:hover,
+.left-feature img:hover,
+.right-feature-1 img:hover {
+  transform: scale(1.05);
+  transition: all ease 0.5s;
 }
 
 footer {
@@ -562,5 +580,35 @@ footer {
     gap: 20px;
     margin-block: 40px;
     flex-direction: column;
+  }
+}
+
+@media (hover:hover) {
+  .grid:hover>picture:not(:hover) {
+    filter: grayscale(100);
+    transition: all ease 0.5s;
+  }
+
+  .grid:hover>picture {
+    filter: grayscale(0);
+    transition: all ease 1.5s;
+  }
+
+  .grid picture,
+  .grid img {
+    filter: saturate(1);
+    transition: all ease 1.5s;
+  }
+
+
+  .grid picture:hover {
+    filter: saturate(2);
+    transition: all ease 0.5s;
+  }
+
+  .right-feature-2:hover,
+  .top-feature-left:hover {
+    filter: invert(100);
+    transition: all ease 0.5s;
   }
 }
