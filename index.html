@@ -14,13 +14,13 @@
 
 <body>
   <main>
-    <!-- header -->
+
     <header>
       <div class="container">
         <div class="hero-section">
           <h1 class="heading-xl h1-heading">Modern Art Gallery</h1>
-          <div>
-            <p class="body-m hero-paragraph pb-64">The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.</p>
+          <div class="hero-text">
+            <p class="body-m hero-paragraph pb-64">The arts in the collection of the <span>Modern Art Gallery</span> all started from a spark of inspiration. Will these pieces inspire you? <span>Visit us and find out.</span></p>
             <div class="btn">
               <a class="btn-link" href="./location.html"> Our Location</a>
               <a class="arrow-right" href="./location.html"><img src="./assets/icon-arrow-right.svg" alt="Arrow Button"></a>
@@ -30,7 +30,6 @@
       </div>
     </header>
 
-    <!-- photo gallery -->
     <article class="container">
 
       <div class="grid">
@@ -39,31 +38,29 @@
           <p class="body-m">Wander through our distinct collections and find new about our artists. Dive into the details of their creative process.</p>
         </div>
 
-        <div class="top-feature-right">
-          <picture>
-            <img src="./assets/desktop/image-grid-1.jpg" alt="Art Gallery Exposition">
-          </picture>
-        </div>
+        <picture class="top-feature-right">
+          <source media="(max-width:800px)" srcset="./assets/tablet/image-grid-1@2x.jpg">
+          <img src="./assets/desktop/image-grid-1@2x.jpg" alt="Art Gallery Exposition">
+        </picture>
 
-        <div class="left-feature">
-          <picture>
-            <img src="./assets/desktop/image-grid-2.jpg" alt="Art Gallery seat">
-          </picture>
-        </div>
+        <picture class="left-feature">
+          <source media="(max-width:800px)" srcset="./assets/tablet/image-grid-2@2x.jpg">
+          <img src="./assets/desktop/image-grid-2@2x.jpg" alt="Art Gallery seat">
+        </picture>
 
-        <div class="right-feature-1">
-          <picture>
-            <img src="./assets/desktop/image-grid-3.jpg" alt="Art Gallery People">
-          </picture>
-        </div>
+        <picture class="right-feature-1">
+          <source media="(max-width:800px)" srcset="./assets/tablet/image-grid-3@2x.jpg">
+          <img src="./assets/desktop/image-grid-3@2x.jpg" alt="Art Gallery People">
+        </picture>
 
         <div class="right-feature-2">
           <h2 class="heading-m white">Come & Be Inspired</h2>
-          <p class="body-m white">We’re excited to welcome you to our gallery and see how our collections influence you.</p>
+          <p class="body-m-white">We’re excited to welcome you to our gallery and see how our collections influence you.</p>
         </div>
       </div>
 
     </article>
+
   </main>
 
   <footer>

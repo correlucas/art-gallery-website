@@ -94,8 +94,17 @@ body {
 }
 
 .body-m {
-  font: 300 22px/32px 'Outfit', sans-serif;
+  font: 300 18px/32px 'Outfit', sans-serif;
   color: var(--gray);
+}
+
+.body-m-white {
+  font: 300 18px/32px 'Outfit', sans-serif;
+  color: var(--white);
+}
+
+span {
+  font-weight: bold;
 }
 
 .body-s {
@@ -217,7 +226,7 @@ header {
 }
 
 .hero-paragraph {
-  max-width: 350px;
+  max-width: 300px;
 }
 
 
@@ -380,4 +389,73 @@ footer {
 
 .pb-64 {
   padding-bottom: 64px;
+}
+
+/* tablet layout */
+
+@media (max-width: 800px) {
+  header {
+    background: var(--white) url(./assets/tablet/image-hero.jpg) no-repeat;
+  }
+
+  .hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-block: 100px;
+    margin-bottom: 0;
+    background-image: initial;
+  }
+
+  .hero-text {
+    grid-column: 2;
+  }
+
+  .heading-xl {
+    font: 900 60px/65px 'Big Shoulders Display', sans-serif;
+    grid-column: 2;
+    max-width: 280px;
+    text-transform: uppercase;
+  }
+
+  .body-m {
+    font: 300 16px/28px 'Outfit', sans-serif;
+    color: var(--gray);
+  }
+
+  .pb-64 {
+    padding-bottom: 48px;
+  }
+
+  /* grid */
+
+  .grid {
+    display: grid;
+    gap: 20px;
+    margin-block: 180px;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      't1 t2 t2'
+      'l1 l1 r1'
+      'l1 l1 r2';
+  }
+
+  .heading-m {
+    font: 900 50px/52px 'Big Shoulders Display', sans-serif;
+  }
+
+  .top-feature-left {
+    padding: 46px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  picture,
+  picture img,
+  picture source {
+    object-fit: cover;
+    overflow: hidden;
+  }
 }
