@@ -16,9 +16,11 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img,
-picture {
+picture,
+source {
   max-width: 100%;
   display: block;
+  object-fit: cover;
   line-height: 0;
 }
 
@@ -284,7 +286,8 @@ header {
 }
 
 footer {
-  padding-block: 80px;
+  background-color: var(--black);
+  padding-block: 56px;
 }
 
 .flex {
@@ -296,6 +299,7 @@ footer {
 .social,
 .social-2 {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 1.5rem;
 }
@@ -330,10 +334,6 @@ footer {
 
 .social-2 svg:hover {
   fill: var(--black);
-}
-
-footer {
-  background-color: var(--black)
 }
 
 .location {
@@ -383,6 +383,11 @@ footer {
   transition: all ease 0.3s;
 }
 
+.logo {
+  object-fit: initial;
+  width: 150px;
+  transform: scale(0.7);
+}
 
 
 /* paddings and margins */
@@ -452,10 +457,4 @@ footer {
     justify-content: flex-start;
   }
 
-  picture,
-  picture img,
-  picture source {
-    object-fit: cover;
-    overflow: hidden;
-  }
 }
