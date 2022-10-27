@@ -205,6 +205,8 @@ header {
   background: linear-gradient(270deg, #FFFFFF 50%, hsla(0, 0%, 8%, 1) 50%);
 }
 
+
+
 .container {
   max-width: 1110px;
   margin: 0 auto;
@@ -217,7 +219,7 @@ header {
   margin-bottom: 180px;
   background-repeat: no-repeat;
   background-image: url(./assets/desktop/image-hero.jpg);
-  background-position: center;
+  background-position: 50% 50%;
   justify-content: space-between;
 }
 
@@ -610,5 +612,72 @@ footer {
   .top-feature-left:hover {
     filter: invert(100);
     transition: all ease 0.5s;
+  }
+}
+
+/* animations */
+.hero-section {
+  -webkit-animation: animateBackground ease-out 2s;
+  transition: all ease-in 1.5s;
+  animation-delay: 500ms;
+}
+
+h1,
+.hero-text {
+  -webkit-animation: slideInTop ease-out 2s;
+  transition: all ease-out 1.5s;
+  animation-delay: 600ms;
+}
+
+@keyframes animateBackground {
+  0% {
+    background-position: 50% -2000%;
+  }
+
+  100% {
+    background-position: 50% 50%;
+  }
+}
+
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
