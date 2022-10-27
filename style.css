@@ -284,10 +284,43 @@ footer {
   justify-content: space-between;
 }
 
-.social {
+.social,
+.social-2 {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
+}
+
+.social svg:hover {
+  fill: var(--brown);
+}
+
+.social svg:hover {
+  fill: var(--black);
+}
+
+.social svg {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  fill: white;
+  gap: 40px;
+}
+
+.social svg:hover {
+  fill: var(--brown);
+}
+
+.social-2 svg {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  fill: white;
+  gap: 40px;
+}
+
+.social-2 svg:hover {
+  fill: var(--black);
 }
 
 footer {
@@ -322,10 +355,26 @@ footer {
   gap: 20px;
 }
 
-.logo {
+.logo path,
+.logo-2 path {
   display: flex;
-  width: 150px;
+  padding: 30px;
+  width: 400px;
+  fill: var(--white);
+  transition: all ease 0.3s;
 }
+
+.logo path:hover {
+  fill: var(--brown);
+  transition: all ease 0.3s;
+}
+
+.logo-2 path:hover {
+  fill: var(--black);
+  transition: all ease 0.3s;
+}
+
+
 
 /* paddings and margins */
 
